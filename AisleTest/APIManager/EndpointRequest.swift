@@ -4,7 +4,7 @@ import Alamofire
 extension Endpoint {    
     private var requestQueue: DispatchQueue {
         return DispatchQueue(
-            label: "com.naxariis.ai.request",
+            label: "com.Aisle.ai.request",
             qos: .background,
             attributes: .concurrent,
             autoreleaseFrequency: .inherit,
