@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WFp-R5-jmn">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter_28pt-Bold.ttf">
+            <string>Inter28pt-Bold</string>
+        </array>
+        <array key="Inter_28pt-Regular.ttf">
+            <string>Inter28pt-Regular</string>
+        </array>
+        <array key="Inter_28pt-SemiBold.ttf">
+            <string>Inter28pt-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notes View Controller-->
+        <scene sceneID="Ozj-VW-gFe">
+            <objects>
+                <viewController storyboardIdentifier="NotesViewController" id="WFp-R5-jmn" customClass="NotesViewController" customModule="AisleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOV-6D-XYg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-3N-WMv">
+                                <rect key="frame" x="159.66666666666666" y="93" width="73.666666666666657" height="33"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal messages to you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrf-1x-r4p">
+                                <rect key="frame" x="20" y="134" width="353" height="22"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-Regular" family="Inter 28pt" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meena" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-fh-LD3">
+                                <rect key="frame" x="15" y="172" width="363" height="344"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interested in you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fr-TF-cKa">
+                                <rect key="frame" x="29.999999999999986" y="530" width="206.66666666666663" height="33"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-VW-2h7">
+                                <rect key="frame" x="31" y="568" width="210" height="58.333333333333371"/>
+                                <string key="text">Premium members can
+view all their likes at once </string>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="16"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-rR-V0x">
+                                <rect key="frame" x="265" y="549" width="113" height="50"/>
+                                <color key="backgroundColor" name="ButtonBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="HM7-LC-Umy"/>
+                                    <constraint firstAttribute="height" constant="50" id="qqr-5A-pC1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter28pt-Bold" family="Inter 28pt" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Upgrade">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xcb-24-D4u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4SU-3N-WMv" firstAttribute="top" secondItem="Xcb-24-D4u" secondAttribute="top" constant="34" id="4JH-hH-4tA"/>
+                            <constraint firstItem="5Fr-TF-cKa" firstAttribute="leading" secondItem="Xcb-24-D4u" secondAttribute="leading" constant="30" id="AAi-Db-9qn"/>
+                            <constraint firstItem="Xcb-24-D4u" firstAttribute="trailing" secondItem="Qrf-1x-r4p" secondAttribute="trailing" constant="20" id="Ej4-HI-MCI"/>
+                            <constraint firstItem="Qrf-1x-r4p" firstAttribute="leading" secondItem="Xcb-24-D4u" secondAttribute="leading" constant="20" id="FWc-HN-WLw"/>
+                            <constraint firstItem="Xcb-24-D4u" firstAttribute="trailing" secondItem="zsF-rR-V0x" secondAttribute="trailing" constant="15" id="G4o-dB-VMH"/>
+                            <constraint firstItem="Xcb-24-D4u" firstAttribute="trailing" secondItem="Tp2-fh-LD3" secondAttribute="trailing" constant="15" id="Gun-ha-5GF"/>
+                            <constraint firstItem="Qrf-1x-r4p" firstAttribute="centerX" secondItem="xOV-6D-XYg" secondAttribute="centerX" id="MIj-iF-A9d"/>
+                            <constraint firstItem="zsF-rR-V0x" firstAttribute="top" secondItem="Tp2-fh-LD3" secondAttribute="bottom" constant="33" id="PpW-yk-fxm"/>
+                            <constraint firstItem="4SU-3N-WMv" firstAttribute="centerX" secondItem="xOV-6D-XYg" secondAttribute="centerX" id="VAj-uJ-GyO"/>
+                            <constraint firstItem="Idb-VW-2h7" firstAttribute="leading" secondItem="xOV-6D-XYg" secondAttribute="leading" constant="31" id="XuC-8K-eOb"/>
+                            <constraint firstItem="zsF-rR-V0x" firstAttribute="leading" secondItem="Idb-VW-2h7" secondAttribute="trailing" constant="24" id="aWn-bi-Lta"/>
+                            <constraint firstItem="Tp2-fh-LD3" firstAttribute="leading" secondItem="Xcb-24-D4u" secondAttribute="leading" constant="15" id="cc1-7z-V3l"/>
+                            <constraint firstItem="Tp2-fh-LD3" firstAttribute="top" secondItem="Qrf-1x-r4p" secondAttribute="bottom" constant="16" id="h33-8z-xS7"/>
+                            <constraint firstItem="Qrf-1x-r4p" firstAttribute="top" secondItem="4SU-3N-WMv" secondAttribute="bottom" constant="8" id="kGk-KV-cvd"/>
+                            <constraint firstItem="Idb-VW-2h7" firstAttribute="top" secondItem="5Fr-TF-cKa" secondAttribute="bottom" constant="5" id="sYR-LY-Udw"/>
+                            <constraint firstItem="5Fr-TF-cKa" firstAttribute="top" secondItem="Tp2-fh-LD3" secondAttribute="bottom" constant="14" id="uJU-mx-aSb"/>
+                            <constraint firstItem="zsF-rR-V0x" firstAttribute="leading" secondItem="5Fr-TF-cKa" secondAttribute="trailing" constant="28.333333333333371" id="zQI-Rg-cN4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIm-7X-Fed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Meena" width="344" height="344"/>
+        <namedColor name="ButtonBackgroundColor">
+            <color red="0.97600001096725464" green="0.79600000381469727" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

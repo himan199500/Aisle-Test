@@ -1,0 +1,24 @@
+// MARK: - Common errors
+"INTERNETERROR" = "Seems like you are not connected to the internet, please check your network settings and try again";
+"SERVERERROR" = "Oops! something went wrong at our end, we are trying to fix it";
+"CAMERASUPPORT" = "Sorry your device's camera is not functional";
+"UNKNOWNERROR" = "An unknown error has occured, we are trying to fix it";
+"URLDOESNOTEXIST" = "The URL you are trying to reach does not exists";
+
+//LOGIN View
+"GETOTP" = "Get OTP";
+"ENTERNUMBER" = "Enter Your \nPhone Number";
+
+
+//OTP View
+"ENTEROTP" = "Enter The \nOTP";
+"CONTINUE" = "Continue";
+
+
+//Validations
+"EMPTYNUMBER" = "Phone number canot be left empty";
+"INVALIDNUMBER" = "Please enter vaid phone number";
+
+"EMPTYOTP" = "OTP field cannet be left empty";
+"INVALIDOTP" = "Please enter valid otp";
+

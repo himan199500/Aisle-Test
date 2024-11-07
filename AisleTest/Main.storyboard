@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PWB-BI-RIG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter_28pt-Bold.ttf">
+            <string>Inter28pt-Bold</string>
+        </array>
+        <array key="Inter_28pt-Regular.ttf">
+            <string>Inter28pt-Regular</string>
+        </array>
+        <array key="Inter_28pt-SemiBold.ttf">
+            <string>Inter28pt-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Ss4-Rw-z8I">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="PWB-BI-RIG" customClass="LoginViewController" customModule="AisleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wWi-Sg-SCo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4q-3E-xjX">
+                                <rect key="frame" x="30.000000000000007" y="139" width="68.666666666666686" height="22"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-Regular" family="Inter 28pt" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-0P-b0A">
+                                <rect key="frame" x="30.000000000000014" y="169" width="209.33333333333337" height="72.666666666666686"/>
+                                <string key="text">Enter Your
+Phone Number</string>
+                                <fontDescription key="fontDescription" name="Inter28pt-Bold" family="Inter 28pt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+91" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLp-zF-PFL">
+                                <rect key="frame" x="30" y="253.66666666666663" width="52" height="34"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone no." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yav-i4-gzM">
+                                <rect key="frame" x="91" y="253.66666666666663" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="T9N-ks-UgF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bq0-wP-cFm">
+                                <rect key="frame" x="32" y="306.66666666666669" width="96" height="40"/>
+                                <color key="backgroundColor" name="ButtonBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="0L8-Lm-v66"/>
+                                    <constraint firstAttribute="height" constant="40" id="OTQ-MJ-xLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinueActionWithSender:" destination="PWB-BI-RIG" eventType="touchUpInside" id="qEg-nt-Zbv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="unl-xg-eRi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xb8-0P-b0A" firstAttribute="leading" secondItem="unl-xg-eRi" secondAttribute="leading" constant="30" id="2jh-z4-vIG"/>
+                            <constraint firstItem="yav-i4-gzM" firstAttribute="leading" secondItem="eLp-zF-PFL" secondAttribute="trailing" constant="9" id="8Fx-gv-oDB"/>
+                            <constraint firstItem="Xb8-0P-b0A" firstAttribute="top" secondItem="B4q-3E-xjX" secondAttribute="bottom" constant="8" id="JoK-s5-mjk"/>
+                            <constraint firstItem="B4q-3E-xjX" firstAttribute="top" secondItem="unl-xg-eRi" secondAttribute="top" constant="80" id="Otz-pq-LTr"/>
+                            <constraint firstItem="Bq0-wP-cFm" firstAttribute="top" secondItem="eLp-zF-PFL" secondAttribute="bottom" constant="19" id="UJT-k0-Fef"/>
+                            <constraint firstItem="yav-i4-gzM" firstAttribute="top" secondItem="Xb8-0P-b0A" secondAttribute="bottom" constant="12" id="bc2-By-E0Q"/>
+                            <constraint firstItem="eLp-zF-PFL" firstAttribute="leading" secondItem="unl-xg-eRi" secondAttribute="leading" constant="30" id="eRC-fz-1Nb"/>
+                            <constraint firstItem="eLp-zF-PFL" firstAttribute="top" secondItem="Xb8-0P-b0A" secondAttribute="bottom" constant="12" id="nFf-Ee-Llh"/>
+                            <constraint firstItem="B4q-3E-xjX" firstAttribute="leading" secondItem="unl-xg-eRi" secondAttribute="leading" constant="30" id="q6U-iA-Tr2"/>
+                            <constraint firstItem="Bq0-wP-cFm" firstAttribute="leading" secondItem="unl-xg-eRi" secondAttribute="leading" constant="32" id="zff-VP-BVa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EBL-uR-A5E"/>
+                    <connections>
+                        <outlet property="btnContinue" destination="Bq0-wP-cFm" id="O81-c7-5bT"/>
+                        <outlet property="lblEnterNumber" destination="Xb8-0P-b0A" id="Qq7-gF-A8m"/>
+                        <outlet property="lblGetOTP" destination="B4q-3E-xjX" id="C0g-3e-v8A"/>
+                        <outlet property="txtFldCountryCode" destination="eLp-zF-PFL" id="Ndd-2n-h7N"/>
+                        <outlet property="txtFldPhoneNumber" destination="yav-i4-gzM" id="uW4-aH-5Nq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hm-wB-JKd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Iwn-MV-izb">
+            <objects>
+                <viewController storyboardIdentifier="OTPViewController" id="oxb-1q-Wbr" customClass="OTPViewController" customModule="AisleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w2z-W8-ox0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-8Y-vg6">
+                                <rect key="frame" x="30" y="139" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-Regular" family="Inter 28pt" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvF-pU-Hpd">
+                                <rect key="frame" x="30" y="147" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Inter28pt-Bold" family="Inter 28pt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c62-lJ-vdw">
+                                <rect key="frame" x="30" y="159" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9A7-aF-FBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-Fq-4Wj">
+                                <rect key="frame" x="32" y="212" width="96" height="40"/>
+                                <color key="backgroundColor" name="ButtonBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8Eh-Dz-tdN"/>
+                                    <constraint firstAttribute="width" constant="96" id="qsH-n8-G9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinueActionWithSender:" destination="oxb-1q-Wbr" eventType="touchUpInside" id="FTN-m1-ndU"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="usy-LS-yX3">
+                                <rect key="frame" x="138" y="223.66666666666666" width="49" height="17"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDT-FT-Yp3">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Resend">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgX-Id-Lys">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="17"/>
+                                        <fontDescription key="fontDescription" name="Inter28pt-SemiBold" family="Inter 28pt" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moo-fh-Uf7">
+                                <rect key="frame" x="40" y="128" width="12" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Edit"/>
+                                <connections>
+                                    <action selector="btnEditActionWithSender:" destination="oxb-1q-Wbr" eventType="touchUpInside" id="DGw-nr-U6y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lYG-m5-q8v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="usy-LS-yX3" firstAttribute="leading" secondItem="8Sc-Fq-4Wj" secondAttribute="trailing" constant="10" id="0an-6s-dmR"/>
+                            <constraint firstItem="7gi-8Y-vg6" firstAttribute="top" secondItem="lYG-m5-q8v" secondAttribute="top" constant="80" id="25Y-oF-azh"/>
+                            <constraint firstItem="HvF-pU-Hpd" firstAttribute="leading" secondItem="lYG-m5-q8v" secondAttribute="leading" constant="30" id="2iy-nm-7tg"/>
+                            <constraint firstItem="Moo-fh-Uf7" firstAttribute="leading" secondItem="7gi-8Y-vg6" secondAttribute="trailing" constant="10" id="53b-DH-L8B"/>
+                            <constraint firstItem="8Sc-Fq-4Wj" firstAttribute="top" secondItem="c62-lJ-vdw" secondAttribute="bottom" constant="19" id="FQb-ex-E3c"/>
+                            <constraint firstItem="7gi-8Y-vg6" firstAttribute="leading" secondItem="lYG-m5-q8v" secondAttribute="leading" constant="30" id="Gaj-cp-guc"/>
+                            <constraint firstItem="c62-lJ-vdw" firstAttribute="leading" secondItem="lYG-m5-q8v" secondAttribute="leading" constant="30" id="IGK-i4-RQh"/>
+                            <constraint firstItem="8Sc-Fq-4Wj" firstAttribute="leading" secondItem="lYG-m5-q8v" secondAttribute="leading" constant="32" id="glJ-dN-PaP"/>
+                            <constraint firstItem="usy-LS-yX3" firstAttribute="centerY" secondItem="8Sc-Fq-4Wj" secondAttribute="centerY" id="iYd-eI-jiu"/>
+                            <constraint firstItem="Moo-fh-Uf7" firstAttribute="centerY" secondItem="7gi-8Y-vg6" secondAttribute="centerY" id="ofi-Ea-530"/>
+                            <constraint firstItem="c62-lJ-vdw" firstAttribute="top" secondItem="HvF-pU-Hpd" secondAttribute="bottom" constant="12" id="uSD-Ew-e5W"/>
+                            <constraint firstItem="HvF-pU-Hpd" firstAttribute="top" secondItem="7gi-8Y-vg6" secondAttribute="bottom" constant="8" id="xzV-Vk-rWi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnContinue" destination="8Sc-Fq-4Wj" id="jjR-A5-NFa"/>
+                        <outlet property="btnResend" destination="wDT-FT-Yp3" id="oHk-hX-Fno"/>
+                        <outlet property="lblEnterOtp" destination="HvF-pU-Hpd" id="B5Y-c4-78b"/>
+                        <outlet property="lblPhoneNo" destination="7gi-8Y-vg6" id="VRb-W2-dKB"/>
+                        <outlet property="lblTimer" destination="QgX-Id-Lys" id="C8f-7q-ob0"/>
+                        <outlet property="txtFldOtp" destination="c62-lJ-vdw" id="SDu-xK-gko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9Y-Sg-Q3P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707.63358778625957" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Edit" width="12" height="12"/>
+        <namedColor name="ButtonBackgroundColor">
+            <color red="0.97600001096725464" green="0.79600000381469727" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
